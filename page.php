@@ -46,7 +46,7 @@ if(is_page('about'))
          <?php the_row(); ?>
                     
             <div class="faqrow">
-               <div class="question"><div class="question-image"></div><?php the_sub_field('question'); ?></div>
+               <div class="question"><div class="question-image"></div><span><?php the_sub_field('question'); ?></span></div>
                <div class="answer"><?php the_sub_field('answer'); ?></div>
             </div><!-- faqrow -->
 <?php endwhile; endif; // end faq's ?>
