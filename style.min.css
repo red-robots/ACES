@@ -1254,7 +1254,6 @@ body{background:#fff}
 blockquote,q{quotes:"" ""}
 blockquote:before,blockquote:after,q:before,q:after{content:""}
 hr{background-color:#ccc;border:0;height:1px;margin-bottom:1.5em}
-ul,ol{margin:0 0 1.5em 3em}
 ul{list-style:disc}
 ol{list-style:decimal}
 li>ul,li>ol{margin-bottom:0;margin-left:1.5em}
