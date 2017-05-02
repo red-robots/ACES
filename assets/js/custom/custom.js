@@ -102,4 +102,16 @@ jQuery(document).ready(function ($) {
 	------------------------------------*/
 	new WOW().init();
 
+
+/*
+		FAQ dropdowns
+__________________________________________
+*/
+$('.question').click(function() {
+ 
+    $(this).next('.answer').slideToggle(500);
+    $(this).toggleClass('close');
+ 
+});
+
 });// END #####################################    END

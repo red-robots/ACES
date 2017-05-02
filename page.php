@@ -34,9 +34,22 @@ if(is_page('about'))
 
 				</article><!-- #post-## -->
 
-
 			<?php endwhile; // End of the loop.
 			?>
+			
+			<?php /*
+     ------------------------------------
+        FAQ's
+   ------------------------------------*/ ?>
+ <?php if( have_rows('faqs') ): ?>
+     <?php while ( have_rows('faqs') ) : ?>
+         <?php the_row(); ?>
+                    
+            <div class="faqrow">
+               <div class="question"><div class="question-image"></div><?php the_sub_field('question'); ?></div>
+               <div class="answer"><?php the_sub_field('answer'); ?></div>
+            </div><!-- faqrow -->
+<?php endwhile; endif; // end faq's ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
