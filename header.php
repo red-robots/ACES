@@ -12,6 +12,10 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+	<div class="social-icons-header">
+		<a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true" style="color:#3B5998;"></i></a>
+		<a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true" style="color:#00aced"></i></a>
+	</div>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">

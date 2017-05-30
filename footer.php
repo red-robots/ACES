@@ -29,7 +29,7 @@
 	<?php 
 	// The Loop
 	 if ( $the_query->have_posts()) : ?>
- <div class="line5"><h2>Testimonials</h2><div class="spacer2"></div></div>
+ <div class="line5"><h2>Our Reputation</h2><div class="spacer2"></div></div>
 <div class="flexslider">
         <ul class="slides">
         <?php while ( $the_query->have_posts() ) : ?>

@@ -91,7 +91,7 @@ get_header(); ?>
 	            echo '<tr>';
 	            echo '<th class="col">Test Date</th>';
 	            echo '<th class="col">Register By</th>';
-	            echo '<th class="col">Scores Released</th>';
+	            echo '<th class="col">Late Registration</th>';
 	            echo '</tr>';
 			foreach($rows as $row)
 			{
@@ -118,7 +118,7 @@ get_header(); ?>
 	            echo '<tr>';
 	            echo '<th class="col">Test Date</th>';
 	            echo '<th class="col">Register By</th>';
-	            echo '<th class="col">Scores Released</th>';
+	            echo '<th class="col">Late Registration</th>';
 	            echo '</tr>';
 			foreach($rows as $row)
 			{
