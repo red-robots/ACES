@@ -10,25 +10,29 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php
-			while ( have_posts() ) : the_post(); 
-			?>
+<?php
+while ( have_posts() ) : the_post(); 
+?>
 
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<header class="entry-header">
-						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-					</header><!-- .entry-header -->
-					<?php $args=array(
-						'post_type'=>'testimonial', 
-						'post_per_page'=>-1
-					);
-					$query=new WP_Query($args);
-					if($query->have_posts()):?>
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+		<header class="entry-header">
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		</header><!-- .entry-header -->
+
+		<?php $args=array(
+			'post_type'=>'testimonial', 
+			'post_per_page'=>-1
+			);
+			$query=new WP_Query($args);
+			if($query->have_posts()):
+		?>
 						<div class="entry-content">
 							<div id="container">
-								<?php while($query->have_posts()): $query->the_post();?>
+								<?php while($query->have_posts()): $query->the_post();
+								?>
 									<div class="item">
-										<?php the_content();?>
+										<?php the_content();?><h2><?php the_field ('signature');?></h2>
 									</div>
 								<?php endwhile;?>
 							</div> <!--container -->

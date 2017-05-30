@@ -16,43 +16,38 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="testimonials">
 
-<div id="home-slider">
-	<?php 
-	// Query the Post type Slides
-	$querySlides = array(
-		'post_type' => 'testimonial',
-		'posts_per_page' => '-1'
-	);
-	// The Query
-	$the_query = new WP_Query( $querySlides );
-	?>
-	<?php 
-	// The Loop
-	 if ( $the_query->have_posts()) : ?>
- <div class="line5"><h2>Our Reputation</h2><div class="spacer2"></div></div>
-<div class="flexslider">
-        <ul class="slides">
-        <?php while ( $the_query->have_posts() ) : ?>
-			<?php $the_query->the_post(); ?>
-            
-            <li> 
-              
-                   <?php the_content();?>
-                
-            </li>
-            
-           <?php endwhile; ?>
-      	 </ul><!-- slides -->
-</div><!-- .flexslider -->
- 
- 
-         <?php endif; // end loop ?>
-        
-    <?php wp_reset_postdata(); ?>
-    
-</div><!-- home slider -->
+		<div id="home-slider">
+			<?php 
+			// Query the Post type Slides
+			$querySlides = array(
+				'post_type' => 'testimonial',
+				'posts_per_page' => '-1'
+			);
+			// The Query
+			$the_query = new WP_Query( $querySlides );
+			?>
+			<?php 
+			// The Loop
+			 if ( $the_query->have_posts()) : ?>
 
-</div><!--testimonials -->
+ 	<div class="line5"><h2>Our Reputation</h2><div class="spacer2"></div></div>
+		<div class="flexslider">
+	        <ul class="slides">
+		        <?php while ( $the_query->have_posts() ) : ?>
+					<?php $the_query->the_post(); ?>
+		           <li> 
+						<?php the_content();?>
+		           </li>  
+		        <?php endwhile; ?>
+	      	 </ul><!-- slides -->
+		</div><!-- .flexslider -->
+         		<?php endif; // end loop ?>
+    			<?php wp_reset_postdata(); ?>
+		</div><!-- home slider -->
+			<div class="testimonial-button">
+		        <a href="http://localhost:8888/ACES/Site/our-reputation/">More Testimonials</a>
+		    </div>
+		</div><!--testimonials -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
