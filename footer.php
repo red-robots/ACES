@@ -28,7 +28,8 @@
 			?>
 			<?php 
 			// The Loop
-			 if ( $the_query->have_posts()) : ?>
+			 if ($the_query->have_posts()) : 
+			?>
 
  	<div class="line5"><h2>Our Reputation</h2><div class="spacer2"></div></div>
 		<div class="flexslider">
@@ -37,6 +38,7 @@
 					<?php $the_query->the_post(); ?>
 		           <li> 
 						<?php the_content();?>
+						<?php the_field('signature'); ?>
 		           </li>  
 		        <?php endwhile; ?>
 	      	 </ul><!-- slides -->
@@ -45,7 +47,7 @@
     			<?php wp_reset_postdata(); ?>
 		</div><!-- home slider -->
 			<div class="testimonial-button">
-		        <a href="http://localhost:8888/ACES/Site/our-reputation/">More Testimonials</a>
+		        <a href="http://aces.bellaworksdev.com/our-reputation/">More Testimonials</a>
 		    </div>
 		</div><!--testimonials -->
 	</footer><!-- #colophon -->

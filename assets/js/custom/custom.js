@@ -38,6 +38,7 @@ jQuery(document).ready(function ($) {
 	------------------------------------*/
 	$('.flexslider').flexslider({
 		animation: "slide",
+		animate: "slow",
 	}); // end register flexslider
 	
 	/*
@@ -60,6 +61,7 @@ jQuery(document).ready(function ($) {
   	$container.isotope({
     // options
 	 itemSelector: '.item',
+	 layoutMode: 'masonry',
 		  masonry: {
 			gutter: 0
 			}
