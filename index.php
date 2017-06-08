@@ -134,6 +134,7 @@ get_header(); ?>
 			</table>
 			</div><!--section2 -->
 		</div><!--line2 -->
+		<center><h3>We recommend that you sign up for the ACT and SAT essay.</h3></center>
 	</div>
 	<!-- row3 -->
 

@@ -165,12 +165,12 @@ table {
 	padding: 10px;
 	th {
     	border-bottom: 3px solid lightgrey;
-    	padding: 5px;
+    	padding: 10px;
 	}
 	td {
     	padding: 20px;
 	    @media screen and (min-width: $deskwidth) {
-	    	padding: 8px 55px;
+	    	padding: 10px 35px;
 	    }
 	}
 }
