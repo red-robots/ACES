@@ -32,7 +32,7 @@ while ( have_posts() ) : the_post();
 								<?php while($query->have_posts()): $query->the_post();
 								?>
 									<div class="item">
-										<?php the_content();?><h2><?php the_field ('signature');?></h2>
+										<?php the_content();?><p><?php the_field ('signature');?></p>
 									</div>
 								<?php endwhile;?>
 							</div> <!--container -->
@@ -48,3 +48,4 @@ while ( have_posts() ) : the_post();
 	</div><!-- #primary -->
 
 <?php
+get_footer();

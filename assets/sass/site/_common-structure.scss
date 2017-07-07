@@ -17,13 +17,18 @@ div {
 	hyphens: auto;
 }
 .social-icons-header {
-	float: right;
+	text-align: center;
 	padding: 20px;
 	.fa {
-		padding: 5px;
+		padding: 10px;
+		font-size: 18pt;
 	}
 	@media screen and (min-width: $tabwidth) {
-		padding: 160px 60px 20px 5px;
+		padding: 170px 20px 20px 5px;
+		float: right;
+		.fa {
+		padding: 8px;
+		}
 	}
 	@media screen and (min-width: $deskwidth) {
 	}
@@ -39,10 +44,10 @@ header.site-header {
 	
 	@media screen and (min-width: $tabwidth) {
 		width: 90%;
-		padding: 0;
+		padding-top: 20px;
 	}
 	@media screen and (min-width: $deskwidth) {
-		padding: 0px;
+		padding-top: 20px;
 	}
 }
 .content-area-full {
@@ -101,6 +106,7 @@ header.site-header {
 		height: 200px;
 		float: left;
 		margin: 0;
+		padding: 20px;
 	}
 	@media screen and (min-width: $deskwidth) {
 		/*width: 1200px;*/
@@ -142,7 +148,7 @@ header.site-header {
 	padding: 50px;
 	}
 	.line5 {
-		h2 {
+		p {
 		padding: 10px;
 		margin: 0;
 		}
@@ -154,16 +160,16 @@ header.site-header {
 	}
 }
 .testimonial-button {
-	color: white;
-	background-color: #339966;
-	width: 200px;
-	text-align: center;
-    display: block;
-    margin: 0 auto;
-    padding: 20px;
-    a {
+	a {
     	text-decoration: none;
     	color: white;
+    	color: white;
+		background-color: #339966;
+		width: 200px;
+		text-align: center;
+	    display: block;
+	    margin: 0 auto;
+	    padding: 20px;
     }
     a:hover {
     	color: black;

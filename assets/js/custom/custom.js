@@ -6,7 +6,7 @@
  */
 
 jQuery(document).ready(function ($) {
-	
+	console.log("here4");
 	/*
 	*
 	*	Current Page Active
@@ -17,7 +17,7 @@ jQuery(document).ready(function ($) {
         $(this).addClass("active");
         }
 	});
-
+	console.log("here5");
 	/*
 	*
 	*	Responsive iFrames
@@ -30,7 +30,7 @@ jQuery(document).ready(function ($) {
 		$(this).removeAttr('height').removeAttr('width').wrap( "<div class='embed-container'></div>" );
  	
  	});
-	
+	console.log("here3");
 	/*
 	*
 	*	Flexslider
@@ -38,9 +38,9 @@ jQuery(document).ready(function ($) {
 	------------------------------------*/
 	$('.flexslider').flexslider({
 		animation: "slide",
-		animate: "slow",
+		slideshowSpeed: 10000,
 	}); // end register flexslider
-	
+	console.log("here2");
 	/*
 	*
 	*	Colorbox
@@ -58,12 +58,15 @@ jQuery(document).ready(function ($) {
 	*
 	------------------------------------*/
 	var $container = $('#container').imagesLoaded( function() {
-  	$container.isotope({
+		console.log("here");
+  	$('#container').isotope({
     // options
 	 itemSelector: '.item',
+	 percentPosition: true,
 	 layoutMode: 'masonry',
 		  masonry: {
-			gutter: 0
+		  	columnWidth: 50,
+			//gutter: 0,
 			}
  		 });
 	});

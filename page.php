@@ -20,7 +20,7 @@ get_header(); ?>
 			<?php
 			while ( have_posts() ) : the_post(); 
 
-if(is_page('about')) 
+if(is_page('about')): 
 			?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -31,10 +31,11 @@ if(is_page('about'))
 					<div class="entry-content">
 						<?php the_content(); ?>
 					</div><!-- .entry-content -->
+					<div class="clear"></div> <!-- clear -->
 
 				</article><!-- #post-## -->
 
-			<?php endwhile; // End of the loop.
+			<?php endif;endwhile; // End of the loop.
 			?>
 			
 			<?php /*

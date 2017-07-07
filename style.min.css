@@ -1389,14 +1389,15 @@ html[xmlns] .flexslider .slides{display:block}
 .widget select{max-width:100%}
 *{-webkit-hyphens:none}
 div{overflow-wrap:break-word;word-wrap:break-word;-ms-word-break:break-all;word-break:break-all;word-break:break-word;-ms-hyphens:auto;-moz-hyphens:auto;-webkit-hyphens:auto;hyphens:auto}
-.social-icons-header{float:right;padding:20px}
-.social-icons-header .fa{padding:5px}
-@media screen and (min-width:600px){.social-icons-header{padding:160px 60px 20px 5px}
+.social-icons-header{text-align:center;padding:20px}
+.social-icons-header .fa{padding:10px;font-size:18pt}
+@media screen and (min-width:600px){.social-icons-header{padding:170px 20px 20px 5px;float:right}
+.social-icons-header .fa{padding:8px}
 }header.site-header{padding-bottom:20px}
 .clear{clear:both}
 .wrapper{width:100%;margin:0 auto;padding:20px}
-@media screen and (min-width:600px){.wrapper{width:90%;padding:0}
-}@media screen and (min-width:1200px){.wrapper{padding:0}
+@media screen and (min-width:600px){.wrapper{width:90%;padding-top:20px}
+}@media screen and (min-width:1200px){.wrapper{padding-top:20px}
 }.content-area-full{width:100%;margin:0 auto}
 @media screen and (min-width:600px){.content-area-full{margin:0}
 }.content-area{width:100%;margin:0 auto;background-color:lightgrey;padding:20px}
@@ -1405,7 +1406,7 @@ div{overflow-wrap:break-word;word-wrap:break-word;-ms-word-break:break-all;word-
 @media screen and (min-width:600px){.widget-area{width:26%;margin:0}
 }@media screen and (min-width:1200px){}
 .logo,h1.logo{width:300px;height:200px;background-image:url(images/logo.png);margin:10px auto;background-size:contain;background-position:50% 0;background-repeat:no-repeat;-webkit-box-flex:0;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto}
-@media screen and (min-width:600px){.logo,h1.logo{width:300px;height:200px;float:left;margin:0}
+@media screen and (min-width:600px){.logo,h1.logo{width:300px;height:200px;float:left;margin:0;padding:20px}
 }@media screen and (min-width:1200px){}
 .logo a,h1.logo a{width:300px;height:200px;display:block;text-indent:-9000px}
 @media screen and (min-width:600px){.logo a,h1.logo a{width:300px;height:200px}
@@ -1414,15 +1415,15 @@ div{overflow-wrap:break-word;word-wrap:break-word;-ms-word-break:break-all;word-
 @media screen and (min-width:600px){#masthead>.wrapper{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-box-align:end;-webkit-align-items:flex-end;-ms-flex-align:end;-ms-grid-row-align:flex-end;align-items:flex-end;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
 }.testimonials{padding:20px;text-align:center}
 @media screen and (min-width:600px){.testimonials{padding:50px}
-}.testimonials .line5 h2{padding:10px;margin:0}
+}.testimonials .line5 p{padding:10px;margin:0}
 .testimonials .line5 .spacer2{width:10%;border-bottom:1px solid #000;margin:0 auto}
-.testimonial-button{color:white;background-color:#396;width:200px;text-align:center;display:block;margin:0 auto;padding:20px}
-.testimonial-button a{text-decoration:none;color:white}
+.testimonial-button a{text-decoration:none;color:white;color:white;background-color:#396;width:200px;text-align:center;display:block;margin:0 auto;padding:20px}
 .testimonial-button a:hover{color:black}
 .sticky{display:block}
 .hentry{margin:0 0 1.5em}
 .byline,.updated:not(.published){display:none}
 .single .byline,.group-blog .byline{display:inline}
+.clear{clear:both}
 .page-links{clear:both;margin:0 0 1.5em}
 .banner{width:100%;position:relative}
 .banner img{width:100%}
