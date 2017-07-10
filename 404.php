@@ -18,7 +18,7 @@ get_header(); ?>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'acstarter' ); ?></p>
+					<p><?php esc_html_e( 'It looks like nothing was found at this location. Please try again.', 'acstarter' ); ?></p>
 
 					<?php
 						get_search_form();
@@ -29,20 +29,6 @@ get_header(); ?>
 						if ( acstarter_categorized_blog() ) :
 					?>
 
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'acstarter' ); ?></h2>
-						<ul>
-						<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-						?>
-						</ul>
-					</div><!-- .widget -->
 
 					<?php
 						endif;
