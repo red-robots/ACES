@@ -24,13 +24,14 @@ div {
 		font-size: 18pt;
 	}
 	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
 		padding: 170px 20px 20px 5px;
 		float: right;
 		.fa {
 		padding: 8px;
 		}
-	}
-	@media screen and (min-width: $deskwidth) {
 	}
 }
 header.site-header {
