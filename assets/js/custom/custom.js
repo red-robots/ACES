@@ -59,16 +59,11 @@ jQuery(document).ready(function ($) {
 	------------------------------------*/
 	var $container = $('#container').imagesLoaded( function() {
 		console.log("here");
-  	$('#container').isotope({
-    // options
-	 itemSelector: '.item',
-	 percentPosition: true,
-	 layoutMode: 'masonry',
-		  masonry: {
-		  	columnWidth: 50,
-			//gutter: 0,
-			}
- 		 });
+  		$('#container').isotope({
+	   		 // options
+			 itemSelector: '.item',
+			 percentPosition: true,
+		});
 	});
 
 	/*

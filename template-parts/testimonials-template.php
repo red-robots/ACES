@@ -22,7 +22,7 @@ while ( have_posts() ) : the_post();
 
 		<?php $args=array(
 			'post_type'=>'testimonial', 
-			'post_per_page'=>-1
+			'posts_per_page'=>-1
 			);
 			$query=new WP_Query($args);
 			if($query->have_posts()):
