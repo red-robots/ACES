@@ -19,27 +19,7 @@ get_header(); ?>
 
 				<div class="page-content">
 					<p><?php esc_html_e( 'It looks like nothing was found at this location. Please try again.', 'acstarter' ); ?></p>
-
-					<?php
-						get_search_form();
-
-						the_widget( 'WP_Widget_Recent_Posts' );
-
-						// Only show the widget if site has multiple categories.
-						if ( acstarter_categorized_blog() ) :
-					?>
-
-
-					<?php
-						endif;
-
-						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'acstarter' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-
-						the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
+						<?php  wp_nav_menu( array( 'theme_location' => 'sitemap' ) ); ?>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 
