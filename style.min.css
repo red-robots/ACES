@@ -1417,7 +1417,7 @@ div{overflow-wrap:break-word;word-wrap:break-word;-ms-word-break:break-all;word-
 @media screen and (min-width:600px){.testimonials{padding:50px}
 }.testimonials .line5 p{padding:20px;margin:0}
 .testimonials .line5 .spacer2{width:10%;border-bottom:1px solid #000;margin:0 auto}
-.testimonial-button{padding-top:40px}
+.testimonial-button{padding-top:30px}
 .testimonial-button a{text-decoration:none;color:white;color:white;background-color:#396;width:200px;text-align:center;display:block;margin:0 auto;padding:20px}
 .testimonial-button a:hover{color:black}
 .sticky{display:block}

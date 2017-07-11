@@ -19,8 +19,7 @@ get_header(); ?>
 
 			<?php
 			while ( have_posts() ) : the_post(); 
-
-if(is_page('about')): 
+ 
 			?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -35,7 +34,7 @@ if(is_page('about')):
 
 				</article><!-- #post-## -->
 
-			<?php endif;endwhile; // End of the loop.
+			<?php endwhile; // End of the loop.
 			?>
 			
 			<?php /*
