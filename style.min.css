@@ -1438,7 +1438,7 @@ div{overflow-wrap:break-word;word-wrap:break-word;-ms-word-break:break-all;word-
 @media screen and (min-width:1200px){.tab{width:23.5%;margin-top:0}
 }.tab h2{text-align:center}
 .tab:last-child{margin-right:0}
-.row3{background-color:lightgrey;padding:0;margin:0}
+.row3{background-color:lightgrey;padding:20px 0;margin:0}
 @media screen and (min-width:600px){.row3{padding:10px}
 }@media screen and (min-width:1200px){.row3{padding:80px}
 }.section1{padding:0;margin:0;background-color:#e0e0e0}
