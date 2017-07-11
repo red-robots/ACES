@@ -1,6 +1,11 @@
 <?php 
 /* Custom Post Types */
 
+add_action('admin_menu', 'isa_remove_menus', 999); 
+function isa_remove_menus() {
+remove_menu_page( 'edit.php' );
+}
+
 add_action('init', 'js_custom_init');
 function js_custom_init() 
 {

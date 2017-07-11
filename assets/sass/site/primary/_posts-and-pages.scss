@@ -174,12 +174,19 @@
 		padding: 25px;
 	}
 	h3 {
-		color: #000;
-		text-align: center;
-		background-color: #E0E0E0;
-		padding: 20px;
+	color: #000;
+	background-color: #E0E0E0;
+	padding: 10px;
+	text-align: center;
+		@media screen and (min-width: $tabwidth) {
+			padding: 20px;
+		}
+		@media screen and (min-width: $deskwidth) {
+	
+		}
 	}
 }
+
 
 table {
 	border-collapse: collapse;
