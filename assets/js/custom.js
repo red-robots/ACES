@@ -38,7 +38,8 @@ jQuery(document).ready(function ($) {
 	------------------------------------*/
 	$('.flexslider').flexslider({
 		animation: "slide",
-		slideshowSpeed: 10000,
+		slideshowSpeed: 15000,
+		smoothHeight: true,
 	}); // end register flexslider
 	console.log("here2");
 	/*
