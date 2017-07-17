@@ -1,15 +1,15 @@
 .main-navigation {
 	width: 100%;
 	clear: both;
-	//display: block;
+	display: block;
 	flex: 0 1 auto;
 	text-align: center;
 	@media screen and (min-width: $tabwidth) {
-		width: auto;
-		clear: none;
+		
 	}
 	@media screen and (min-width: $deskwidth) {
-
+		width: auto;
+		clear: none;
 	}
 
 	ul {
