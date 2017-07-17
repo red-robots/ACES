@@ -45,7 +45,7 @@ header.site-header {
 	flex-wrap: wrap;
 	
 	@media screen and (min-width: $tabwidth) {
-		width: 90%;
+		width: 100%;
 		padding: 0px 20px 20px 20px;
 	}
 	@media screen and (min-width: $deskwidth) {
