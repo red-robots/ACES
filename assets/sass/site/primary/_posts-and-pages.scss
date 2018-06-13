@@ -217,6 +217,9 @@ table {
 	th {
     	border-bottom: 3px solid lightgrey;
     	padding: 5px;
+    	text-align: left;
+    	border-left: 1px solid #ccc;
+    	font-size: 14px;
     	@media screen and (min-width: $tabwidth) {
 			
 		}
@@ -226,11 +229,16 @@ table {
 	}
 	td {
     	padding: 5px;
+    	text-align: left;
+    	border-left: 1px solid #ccc;
+    	font-size: 14px;
+    	border-bottom: 1px solid lightgrey;
     	@media screen and (min-width: $tabwidth) {
 			
 		}
 	    @media screen and (min-width: $deskwidth) {
-	    	padding: 10px 35px;
+	    	padding: 10px ;
+	    	text-align: left;
 	    }
 	}
 }
