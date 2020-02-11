@@ -6,7 +6,6 @@
  */
 
 jQuery(document).ready(function ($) {
-	console.log("here4");
 	/*
 	*
 	*	Current Page Active
@@ -17,7 +16,6 @@ jQuery(document).ready(function ($) {
         $(this).addClass("active");
         }
 	});
-	console.log("here5");
 	/*
 	*
 	*	Responsive iFrames
@@ -30,7 +28,6 @@ jQuery(document).ready(function ($) {
 		$(this).removeAttr('height').removeAttr('width').wrap( "<div class='embed-container'></div>" );
  	
  	});
-	console.log("here3");
 	/*
 	*
 	*	Flexslider
@@ -41,7 +38,6 @@ jQuery(document).ready(function ($) {
 		slideshowSpeed: 15000,
 		smoothHeight: true,
 	}); // end register flexslider
-	console.log("here2");
 	/*
 	*
 	*	Colorbox
@@ -59,7 +55,7 @@ jQuery(document).ready(function ($) {
 	*
 	------------------------------------*/
 	var $container = $('#container').imagesLoaded( function() {
-		console.log("here");
+		//console.log("here");
   		$('#container').isotope({
 	   		 // options
 			 itemSelector: '.item',
@@ -100,10 +96,8 @@ jQuery(document).ready(function ($) {
 __________________________________________
 */
 $('.question').click(function() {
- 
     $(this).next('.answer').slideToggle(500);
     $(this).toggleClass('close');
- 
 });
 
 });// END #####################################    END

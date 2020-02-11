@@ -6,7 +6,6 @@
  */
 
 jQuery(document).ready(function ($) {
-	//console.log("here4");
 	/*
 	*
 	*	Current Page Active
@@ -17,7 +16,6 @@ jQuery(document).ready(function ($) {
         $(this).addClass("active");
         }
 	});
-	//console.log("here5");
 	/*
 	*
 	*	Responsive iFrames
@@ -30,7 +28,6 @@ jQuery(document).ready(function ($) {
 		$(this).removeAttr('height').removeAttr('width').wrap( "<div class='embed-container'></div>" );
  	
  	});
-	//console.log("here3");
 	/*
 	*
 	*	Flexslider
@@ -41,7 +38,6 @@ jQuery(document).ready(function ($) {
 		slideshowSpeed: 15000,
 		smoothHeight: true,
 	}); // end register flexslider
-	//console.log("here2");
 	/*
 	*
 	*	Colorbox
